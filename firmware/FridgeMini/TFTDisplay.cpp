@@ -163,12 +163,13 @@ void TFTDisplay::printLayer0(display_param_t* v)
         }
         else if (!warnArea)
         {
-            tft.fillRect(0, warnMsgY, 240, warnMsgH, TFT_BLACK);
             // warn msg line
+            tft.fillRect(0, warnMsgY, 50, warnMsgH, TFT_BLACK);
             tft.setTextColor(TFT_WHITE);
             tft.setTextDatum(CL_DATUM);
             tft.drawString("已运行", 0, warnMsgY + warnMsgH / 2);
 
+            tft.fillRect(120, warnMsgY, 70, warnMsgH, TFT_BLACK);
             tft.setTextColor(TFT_WHITE);
             tft.setTextDatum(CL_DATUM);
             tft.drawString("上次重启", 120, warnMsgY + warnMsgH / 2);
