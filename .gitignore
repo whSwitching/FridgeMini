@@ -396,3 +396,7 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/firmware/FridgeMini/FridgeMini.vcxproj.filters
+/firmware/FridgeMini/FridgeMini.vcxproj.user
+/firmware/FridgeMini/FridgeMini.vcxproj
+/firmware/FridgeMini/__vm
