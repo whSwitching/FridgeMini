@@ -143,8 +143,8 @@ void FridgeControl::AutoControl(display_param_t* v, TFTDisplay* tft)
         }
         else
         {
-            // map 0.05~1 power to 0~5
-            v->pwTEC = 0.05f + settingTempDiff / 5 * 0.95f;
+            // map 0.3~1 power to 0~5
+            v->pwTEC = 0.3f + settingTempDiff / 5 * 0.7f;
         }
     }
     // safe
